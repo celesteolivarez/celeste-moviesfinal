@@ -2,6 +2,39 @@
 
 {% block content %}
 <div class="container">
-  <p>Content goes here</p>
+  <div class="mt-5">
+    <div class="row">
+      <div class="col">
+      <h1>Why Are Movies so Important?</h1>
+      <p>Movie theatres around the country are shutting down, and it's sad to see the shared experience of getting together to watch a movie die. Movies have and will always be more than just entertainment for me. I love movies because it's a way to connect with emotion, memory and perspective through picture and words. I love that feeling of getting so invested in a story, of seeing the world through someone else’s lens. Movies create moments that stick with you forever, and there’s something so special about going out to a theater to watch them. Sitting in the dark, surrounded by many strangers all experiencing the same thing at the same time is so crucial to a movie experience. It’s a shared experience that reminds me why storytelling truley matters. In a world that moves fast, movies slow us down, pull us in, and invite us to feel something real. So I invite you to watch more movies. Below are some highly rating theaters around Austin that I think you'll find yourself enjoying.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-5">
+    <h2 class="h4">Movie Theaters Around Austin</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4 mt-3">
+      {% for theater in theaters.theaters %}
+      <div class="col">
+        <div class="card h-100">
+          <div class="row g-0 h-100">
+            <div class="col-md-8">
+              <div class="card-body d-flex flex-column h-100">
+                <h5 class="card-title">{{ theater.theater_name }}</h5>
+                <p class="card-text"><strong>Address:</strong> {{ theater.address }}</p>
+                <p class="card-text"><strong>Rating:</strong> {{ theater.rating }}</p>
+                <a href="{{ theater.source }}" target="_blank" class="btn btn-sm btn-outline-primary mt-auto">Visit Website</a>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <img src="img/{{ theater.image }}" alt="{{ theater.theater_name }}" class="img-fluid rounded-end h-100 w-100" style="object-fit: cover;">
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 </div>
 {% endblock %}

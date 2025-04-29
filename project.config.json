@@ -6,6 +6,16 @@
       "name": "library"
     },
     {
+      "fileId": "1ulfJf6J1H3MdQa_A3tEuRpEHRQ6shSPpXozyiIT996s",
+      "type": "doc",
+      "name": "movies"
+    },
+    {
+      "fileId": "1V-VEkPPXc2XNvIKoTu0QpKQ-LXoqDodGLA3wGmJFzLo",
+      "type": "sheet",
+      "name": "theaters"
+    },
+    {
       "fileId": "1gDwO-32cgpBDn_0niV0iu6TqQTaRDr4nmSqnT53magY",
       "type": "sheet",
       "name": "bookstores"
@@ -18,6 +28,27 @@
       "array": "books",
       "slug": "slug",
       "path": "books"
+    },
+    {
+      "template": "bake-movie",
+      "data": "movies",
+      "array": "celeste",
+      "slug": "slug",
+      "path": "reviews"
+    },
+    {
+      "template": "bake-movie",
+      "data": "movies",
+      "array": "ethan",
+      "slug": "slug",
+      "path": "reviews"
+    },
+    {
+      "template": "bake-movie",
+      "data": "movies",
+      "array": "celeste",
+      "slug": "slug",
+      "path": "videos"
     }
   ]
 }

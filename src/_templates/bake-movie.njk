@@ -1,0 +1,35 @@
+{% extends '_templates/base.njk' %}
+
+{% set relative_path = "../" %}
+
+{% block page_title %}{{ title }}{% endblock %}
+
+{% block page_description %}{{ title }} by {{ author }}{% endblock %}
+
+{% block content %}
+<article class="container mt-5">
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="../img/{{ slug }}.jpg" alt="Movie Posters" class="img-fluid rounded shadow-lg border border-light mb-4";>
+    </div>
+
+    <div class="col-sm-8">
+      <h1 class="display-5 fw-bold mb-3">{{ title }}</h1>
+      <p class="mb-1"><strong>Director:</strong> {{ director }}</p>
+      <p class="mb-1"><strong>Rating:</strong> {{ rating }}</p>
+      <p class="mt-4"><strong>About:</strong> {{ about }}</p>
+
+    <div class="ratio ratio-16x9 mt-4">
+<iframe width="560" height="315" src=" {{ trailer }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </div>
+  </div>
+
+  <hr class="my-5">
+
+  <div class="movie-review-section p-4 mt-5 rounded" style="background-color: #1f1f1f; border-left: 5px solid #ffcc00;">
+  <h2 class="text-center text-warning mb-4">Why I Love This Movie</h2>
+  <p class="fs-5 text-light">{{ review }}</p>
+    </div>
+</article>
+{% endblock %}
