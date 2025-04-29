@@ -1,24 +1,14 @@
 {
   "files": [
     {
-      "fileId": "1RgMhjtkXlbbf9uzSzy_xPRKwxcVZIZqVytgM_JoU4E4",
-      "type": "doc",
-      "name": "library"
-    },
-    {
       "fileId": "1ulfJf6J1H3MdQa_A3tEuRpEHRQ6shSPpXozyiIT996s",
       "type": "doc",
       "name": "movies"
     },
     {
-      "fileId": "1V-VEkPPXc2XNvIKoTu0QpKQ-LXoqDodGLA3wGmJFzLo",
+      "fileId": "1FSfYOWzqU-jILyGaD6m-rD_MIsBDg3HojTuK4DVTmjw",
       "type": "sheet",
       "name": "theaters"
-    },
-    {
-      "fileId": "1gDwO-32cgpBDn_0niV0iu6TqQTaRDr4nmSqnT53magY",
-      "type": "sheet",
-      "name": "bookstores"
     }
   ],
   "to_bake": [

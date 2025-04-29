@@ -25,3 +25,40 @@
 h3 {
   font-size: 1.5rem;
 }
+
+
+a img:hover {
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+body {
+  background-color: #222222;
+  color: #ffffffb0;
+}
+
+.card {
+  background-color: #363636;
+  color: #ffffff;
+  border: 1px solid #474dc4;
+}
+
+a {
+  color: #9da0d6;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+.btn-outline-primary {
+  border-color: #9ecbff;
+  color: #9ecbff;
+}
+
+.btn-outline-primary:hover {
+  background-color: #9ecbff;
+  color: #121212;
+}
+
+
